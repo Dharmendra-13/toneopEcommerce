@@ -85,17 +85,17 @@ const CartPage = () => {
                     <div className="row ">
                         <div className="col-md-7  p-0 m-0">
                             {cart?.map((p) => (
-                                <div className="row card flex-row" key={p._id}>
+                                <div className="row mb-2 card flex-row" key={p.id}>
                                     <div className="col-md-4">
                                         <img
                                             src={`/images/${p.photo}`}
                                             className="card-img-top"
                                             alt={p.name}
                                             width="100%"
-                                            height={"130px"}
+                                            height={"200px"}
                                         />
                                     </div>
-                                    <div className="col-md-4">
+                                    <div className="col-md-4 m-2">
                                         <p>{p.name}</p>
                                         <p>{p.description.substring(0, 30)}</p>
                                         <p>Price : {p.price}</p>

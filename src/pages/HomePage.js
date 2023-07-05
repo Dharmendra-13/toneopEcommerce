@@ -29,18 +29,19 @@ const HomePage = () => {
         <Layout title={"All Products - Best offers "}>
             {/* banner image */}
             <img
-                src="/images/banner.png"
+                src="/images/banner.jpg"
                 className="banner-img"
                 alt="bannerimage"
                 width={"100%"}
+                height={"300px"}
             />
             {/* banner image */}
             <div className="container-fluid row mt-3 home-page">
-                <div className="col-md-9 ">
+                <div className="col-md-12 col-sm-12">
                     <h1 className="text-center">All Products</h1>
-                    <div className="d-flex flex-wrap">
+                    <div className="d-flex justify-content-center flex-wrap">
                         {products?.map((p) => (
-                            <div className="card m-2" key={p._id}>
+                            <div className="card m-2" key={p.id}>
                                 <img
                                     src={`/images/${p.photo}`}
                                     className="card-img-top"
